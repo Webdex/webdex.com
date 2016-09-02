@@ -1,0 +1,30 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1>Grow</h1>
+<div id="thumbnails" class="rightfloat">
+	<ol>
+    	<li class="thumb"><img class="img" src="lib/pro/grow/grow_1_thumb.jpg" alt="Grow" title="lib/pro/grow/grow_1.jpg" /><img class="img" src="lib/pro/grow/grow_2_thumb.jpg" alt="Grow" title="lib/pro/grow/grow_2.jpg" /><img class="img" src="lib/pro/grow/grow_thumb.jpg" alt="Grow" title="lib/pro/grow/grow.jpg" style="border-color:#9CDDA7;"/></li>
+    </ol>
+<p></p>
+</div>
+<div id="mainpicture" class="leftfloat">
+<img class="mainpicture" src="lib/pro/grow/grow.jpg" alt="grow main photo"/>
+</div>
+<span class="clearfix"></span>
+</div>

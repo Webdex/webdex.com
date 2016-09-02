@@ -1,0 +1,1542 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+font-family:Helvetica, Arial, sans-serif;
+color:#333333;
+font-size:24px;
+line-height:48px;
+position:relative;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+::selection {
+	background: #9cdda7; /* Safari */
+	color:#FFF;
+	}
+::-moz-selection {
+	background: #9cdda7; /* Firefox */
+		color:#FFF;
+}
+.validate {
+border:2px solid red;
+}
+
+#slogan {
+word-spacing:-4px;	
+}
+
+a:link {
+color:#8BC5DC;
+text-decoration:none;	
+outline:none;
+}
+
+a:visited {
+color:#8BC5DC;
+text-decoration:none;
+outline:none;
+
+}
+
+
+a:active {
+color:#8BC5DC;
+text-decoration:none;	
+outline:none;
+}
+
+
+a:hover {
+color:#9cdda7;
+text-decoration:none;
+outline:none;
+}
+
+.clearfix {
+clear:both;	
+}
+
+.clearfix:after {
+content:" ";
+visibility:hidden;
+clear:both;	
+display:block;
+}
+
+.hiddentext{
+text-indent:-9999px;	
+}
+
+.section {
+border-bottom:1px dashed rgba(0, 0, 0, 0.2);
+padding:150px 0;
+}
+
+.section.last {
+border:none;
+margin-bottom:0px;
+padding-bottom:50px;
+}
+.leftfloat {
+float:left;	
+}
+
+.rightfloat {
+float:right;
+}
+
+#navigationicons, #navigationicons ol, #navigationicons ol li, #navigationicons a {
+z-index:200;
+width:24px;
+height:24px;
+display:block;
+}
+.portfoliosection {
+margin-bottom:25px;
+}
+
+.portfoliosection a {
+display:block;
+width:100%;	
+height:100%;
+}
+
+.labels ol li {
+margin-top:3px;
+}
+
+.message ol li label {
+position:relative;
+top:10px;
+}
+
+
+input#submit {
+	width:103px;
+	height:30px;
+	background-color:#9cdda7;
+	color:#FFF;
+	font-weight:bold;
+	float:right;
+	margin:0px;
+	border:none;	
+}
+
+#submitconfirm {
+display:none;	
+float:right;
+width:260px;
+font-size:12px;
+color:#FFF;
+font-weight:bold;
+letter-spacing:1px;
+}
+#navigationicons {
+position:fixed;
+top:30px;
+left:100%;
+margin-left:-40px;
+}
+
+}
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+html {
+line-height:30px;
+font-size:18px;	
+}
+header {
+height:150px;
+padding-top:10px;
+background:#32abdc;	
+}
+
+.container {
+width:300px;
+margin:0 auto 0 auto;
+	
+}
+
+#navigationicons {
+display:none;
+}
+
+footer {
+height:250px;
+background:#32abdc;	
+}
+
+h1 {	
+font-size:30px;
+color:#8bc5dc;
+margin-bottom:20px;
+float:left;
+}
+
+#logo {
+margin:0 0 10px 0;
+}
+
+#logo img {
+width:300px;	
+}
+
+#slogan {
+	font-size:25px;
+	color:#FFF;
+	margin:0 0 100px 0;
+}
+
+#navigation {
+text-align:center;
+font-size:25px;
+font-weight:bold;	
+}
+
+#navigation li {
+float:left;
+width:260px;
+padding:10px 20px;
+
+}
+
+
+#navigationicons li {
+float:left;
+width:24px;
+height:24px;
+background-repeat:no-repeat;
+border-radius:3px;	
+margin:5px;
+}
+
+.icon.home {
+background-image:url(../img/icon_home.png);	
+}
+.icon.about {
+background-image:url(../img/icon_about.png);	
+}
+.icon.portfolio {
+background-image:url(../img/icon_portfolio.png);	
+}
+.icon.contact {
+background-image:url(../img/icon_email.png);	
+}
+
+.floatedimage {
+float:right;	
+padding:20px;
+background:#e4f5fb;	
+margin:20px 0;
+margin-left:20px;
+}
+
+.backtotop a {
+width:145px;
+float:right;
+font-size:14px;	
+background-image:url(../img/arrow_25.png);
+background-repeat:no-repeat;
+background-position:115px 0px;
+transition:background-position 1s, color 1s;
+-o-transition:background-position 1s, color 1s;
+-moz-transition:background-position 1s, color 1s;
+-webkit-transition:background-position 1s, color 1s;
+
+}
+
+.backtotop a:hover {
+background-position:115px -75px;
+color:#9cdda7;
+}
+
+.verticle {
+width:100px;
+height:200px;	
+}
+.horizontal {
+width:200px;
+height:100px;	
+}
+
+.square {
+width:100px;
+height:100px;	
+}
+
+.fullhalf {
+width:300px;
+height:100px;	
+}
+
+.concept {
+background-image:url(../img/concept.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:300px 200px;
+}
+
+.concept:hover {
+background-position:0px -100px;
+}
+
+
+.ecommerce {
+background-image:url(../img/web_250x525_right_ecommerce.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:200px 200px;
+}
+
+.ecommerce:hover {
+background-position:-100px 0px;
+}
+
+.rideordie {
+background-image:url(../img/logo_250x250_up_rideordie.jpg);	
+background-repeat:no-repeat;
+background-position:-100px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:200px 100px;
+}
+
+.rideordie:hover {
+background-position:0px 0px;
+}
+
+.grow {
+background-image:url(../img/digital_250x250_down_grow.jpg);
+background-repeat:no-repeat;
+background-position:0px -100px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:100px 200px;
+
+}
+
+.grow:hover {
+background-position:0px 0px;
+}
+
+.recipetincan {
+background-image:url(../img/web_525x250_up_recipetincan.jpg);
+background-repeat:no-repeat;
+background-position:0px -100px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:200px 200px;
+}
+
+.recipetincan:hover {
+background-position:0px 0px;
+}
+
+.spiral {
+background-image:url(../img/logo_250x250_left_spiral.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:200px 100px;
+}
+
+.spiral:hover {
+background-position:-100px 0px;
+}
+
+.yorkwater {
+background-image:url(../img/logo_250x250_down_yorkwater.jpg);
+background-repeat:no-repeat;
+background-position:0px -100px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:100px 200px;
+}
+
+.yorkwater:hover {
+background-position:0px 0px;
+}
+
+.cbt2 {
+background-image:url(../img/web_525x250_left_cbt2.jpg);
+background-repeat:no-repeat;
+background-position:-200px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:400px 100px;
+}
+
+.cbt2:hover {
+background-position:0px 0px;
+}
+
+
+.jquery {
+background-image:url(../img/web_250x525_left_jquery.jpg);
+background-repeat:no-repeat;
+background-position:0 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:200px 200px;
+}
+
+.jquery:hover {
+background-position:-100px 0px;
+}
+
+
+.section {
+padding: 50px 0;		
+}
+
+
+form {
+margin:50px 0 0 0;	
+}
+
+input {
+height:24px;
+margin-bottom:0px;
+margin-left:10px;
+width:115px;
+}
+
+label {
+color:#FFF;	
+}
+
+input, textarea {
+border:1px solid rgba(0, 0, 0, 0.2);
+line-height:normal;	
+font-size:16px;
+}
+
+textarea {
+height:70px;
+width:100px;	
+	
+}
+
+.labels, .fields, .message {
+float:left;	
+}
+
+.message {
+margin:-10px 0 0 10px;	
+}
+
+.section.last {
+padding-bottom:0px;	
+}
+
+form {
+padding-top:25px;	
+}
+
+#maincontent {
+	background-repeat:no-repeat;
+	background-size:0px;
+}
+
+#mainpicture {
+width:200px;
+}
+
+#mainpicture img {
+width:200px;
+}
+
+#thumbnails {
+display:none;	
+}
+
+#projectcontainer {
+width:200px;
+width: 0 auto;	
+}
+
+
+
+
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+html {
+line-height:40px;
+font-size:20px;	
+}
+header {
+height:200px;
+padding-top:100px;
+background:#32abdc;	
+}
+
+.container {
+width:500px;
+margin:0 auto 0 auto;
+	
+}
+
+
+footer {
+height:250px;
+background:#32abdc;	
+}
+
+h1 {	
+font-size:45px;
+color:#8bc5dc;
+margin-bottom:20px;
+float:left;
+}
+
+#logo {
+margin:0 0 10px 0;
+}
+
+#logo img {
+width:500px;	
+}
+
+#slogan {
+	font-size:27px;
+	color:#FFF;
+	margin:0 0 100px 0;
+}
+
+#navigation {
+text-align:center;
+font-size:30px;
+font-weight:bold;	
+}
+
+#navigation li {
+float:left;
+width:125px;
+padding:20px 20px;
+
+}
+
+#navigationicons li {
+float:left;
+width:24px;
+height:24px;
+background-repeat:no-repeat;
+border-radius:3px;	
+margin:5px;
+}
+
+.icon.home {
+background-image:url(../img/icon_home.png);	
+}
+.icon.about {
+background-image:url(../img/icon_about.png);	
+}
+.icon.portfolio {
+background-image:url(../img/icon_portfolio.png);	
+}
+.icon.contact {
+background-image:url(../img/icon_email.png);	
+}
+
+.floatedimage {
+float:right;	
+padding:20px;
+background:#e4f5fb;	
+margin:20px 0;
+margin-left:20px;
+}
+
+.backtotop a {
+width:145px;
+float:right;
+font-size:18px;	
+background-image:url(../img/arrow_25.png);
+background-repeat:no-repeat;
+background-position:115px 25px;
+padding-top:15px;
+transition:background-position 1s, color 1s;
+-o-transition:background-position 1s, color 1s;
+-moz-transition:background-position 1s, color 1s;
+-webkit-transition:background-position 1s, color 1s;
+
+}
+
+.backtotop a:hover {
+background-position:115px -50px;
+color:#9cdda7;
+}
+
+.verticle {
+width:150px;
+height:325px;	
+}
+.horizontal {
+width:325px;
+height:150px;	
+}
+
+.square {
+width:150px;
+height:150px;	
+}
+
+.fullhalf {
+width:500px;
+height:150px;	
+}
+
+.concept {
+background-image:url(../img/concept.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:500px 300px;
+}
+
+.concept:hover {
+background-position:0px -150px;
+}
+
+
+.ecommerce {
+background-image:url(../img/web_250x525_right_ecommerce.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:300px 325px;
+}
+
+.ecommerce:hover {
+background-position:-150px 0px;
+}
+
+.rideordie {
+background-image:url(../img/logo_250x250_up_rideordie.jpg);	
+background-repeat:no-repeat;
+background-position:-150px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:300px 150px;
+}
+
+.rideordie:hover {
+background-position:0px 0px;
+}
+
+.grow {
+background-image:url(../img/digital_250x250_down_grow.jpg);
+background-repeat:no-repeat;
+background-position:0px -150px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin:0 25px;	
+background-size:150px 300px;
+
+}
+
+.grow:hover {
+background-position:0px 0px;
+}
+
+.recipetincan {
+background-image:url(../img/web_525x250_up_recipetincan.jpg);
+background-repeat:no-repeat;
+background-position:0px -150px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-top:25px;
+background-size:325px 300px;
+}
+
+.recipetincan:hover {
+background-position:0px 0px;
+}
+
+.spiral {
+background-image:url(../img/logo_250x250_left_spiral.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-right:25px;
+background-size:300px 150px;
+}
+
+.spiral:hover {
+background-position:-150px 0px;
+}
+
+.yorkwater {
+background-image:url(../img/logo_250x250_down_yorkwater.jpg);
+background-repeat:no-repeat;
+background-position:0px -150px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-left:0;
+background-size:150px 300px;
+}
+
+.yorkwater:hover {
+background-position:0px 0px;
+}
+
+.cbt2 {
+background-image:url(../img/web_525x250_left_cbt2.jpg);
+background-repeat:no-repeat;
+background-position:-325px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-top:25px;
+background-size:650px 150px;
+}
+
+.cbt2:hover {
+background-position:0px 0px;
+}
+
+
+.jquery {
+background-image:url(../img/web_250x525_left_jquery.jpg);
+background-repeat:no-repeat;
+background-position:0 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+background-size:300px 325px;
+}
+
+.jquery:hover {
+background-position:-150px 0px;
+}
+
+
+
+
+
+form {
+margin:50px 0 0 0;	
+}
+
+input {
+height:24px;
+margin-bottom:0px;
+margin-left:40px;
+width:129px;
+}
+
+label {
+color:#FFF;	
+}
+
+input, textarea {
+border:1px solid rgba(0, 0, 0, 0.2);
+line-height:normal;	
+font-size:16px;
+}
+
+textarea {
+height:85px;
+width:220px;	
+	
+}
+
+.labels, .fields, .message {
+float:left;	
+}
+
+.message {
+margin:-10px 0 0 40px;	
+}
+
+.section.last {
+padding-bottom:0px;	
+}
+
+form {
+padding-top:50px;	
+}
+	
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+		
+header {
+height:600px;
+padding-top:250px;
+background:#32abdc;	
+}
+
+.container {
+width:800px;
+margin:0 auto 0 auto;
+	
+}
+
+
+footer {
+height:300px;
+background:#32abdc;	
+}
+
+h1 {	
+font-size:60px;
+color:#8bc5dc;
+margin-bottom:20px;
+float:left;
+}
+
+#logo {
+margin:0 0 100px 0;
+}
+
+#logo img {
+width:800px;	
+}
+
+#slogan {
+	font-size:44px;
+	color:#FFF;
+	margin:0 0 100px 0;
+}
+
+#navigation {
+text-align:center;
+font-size:30px;
+font-weight:bold;	
+}
+
+#navigation li {
+float:left;
+width:225px;
+padding:20px 20px;
+
+}
+
+#navigationicons li {
+float:left;
+width:24px;
+height:24px;
+background-repeat:no-repeat;
+border-radius:3px;	
+margin:5px;
+}
+
+.icon.home {
+background-image:url(../img/icon_home.png);	
+}
+.icon.about {
+background-image:url(../img/icon_about.png);	
+}
+.icon.portfolio {
+background-image:url(../img/icon_portfolio.png);	
+}
+.icon.contact {
+background-image:url(../img/icon_email.png);	
+}
+
+.floatedimage {
+float:right;	
+padding:20px;
+background:#e4f5fb;	
+margin:20px 0;
+margin-left:20px;
+}
+
+.backtotop a {
+width:145px;
+float:right;
+font-size:18px;	
+background-image:url(../img/arrow_25.png);
+background-repeat:no-repeat;
+background-position:115px 25px;
+padding-top:15px;
+transition:background-position 1s, color 1s;
+-o-transition:background-position 1s, color 1s;
+-moz-transition:background-position 1s, color 1s;
+-webkit-transition:background-position 1s, color 1s;
+
+}
+
+.backtotop a:hover {
+background-position:115px -50px;
+color:#9cdda7;
+}
+
+.verticle {
+width:250px;
+height:525px;	
+}
+.horizontal {
+width:525px;
+height:250px;	
+}
+
+.square {
+width:250px;
+height:250px;	
+}
+
+.fullhalf {
+width:800px;
+height:250px;	
+}
+
+.concept {
+background-image:url(../img/concept.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.concept:hover {
+background-position:0px -250px;
+}
+
+
+.ecommerce {
+background-image:url(../img/web_250x525_right_ecommerce.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.ecommerce:hover {
+background-position:-250px 0px;
+}
+
+.rideordie {
+background-image:url(../img/logo_250x250_up_rideordie.jpg);	
+background-repeat:no-repeat;
+background-position:-250px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.rideordie:hover {
+background-position:0px 0px;
+}
+
+.grow {
+background-image:url(../img/digital_250x250_down_grow.jpg);
+background-repeat:no-repeat;
+background-position:0px -250px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin:0 25px;	
+}
+
+.grow:hover {
+background-position:0px 0px;
+}
+
+.recipetincan {
+background-image:url(../img/web_525x250_up_recipetincan.jpg);
+background-repeat:no-repeat;
+background-position:0px -250px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-top:25px;
+}
+
+.recipetincan:hover {
+background-position:0px 0px;
+}
+
+.spiral {
+background-image:url(../img/logo_250x250_left_spiral.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-right:25px;
+}
+
+.spiral:hover {
+background-position:-250px 0px;
+}
+
+.yorkwater {
+background-image:url(../img/logo_250x250_down_yorkwater.jpg);
+background-repeat:no-repeat;
+background-position:0px -250px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-left:0;
+}
+
+.yorkwater:hover {
+background-position:0px 0px;
+}
+
+.cbt2 {
+background-image:url(../img/web_525x250_left_cbt2.jpg);
+background-repeat:no-repeat;
+background-position:-525px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-top:25px;
+}
+
+.cbt2:hover {
+background-position:0px 0px;
+}
+
+
+.jquery {
+background-image:url(../img/web_250x525_left_jquery.jpg);
+background-repeat:no-repeat;
+background-position:0 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.jquery:hover {
+background-position:-250px 0px;
+}
+
+
+
+
+form {
+margin:100px 0 0 0;	
+}
+
+input {
+height:24px;
+margin-bottom:10px;
+margin-left:40px;
+width:260px;
+}
+
+label {
+color:#FFF;	
+}
+
+input, textarea {
+border:1px solid rgba(0, 0, 0, 0.2);
+line-height:normal;	
+font-size:16px;
+}
+
+textarea {
+height:100px;	
+}
+
+.labels, .fields, .message {
+float:left;	
+}
+
+.message {
+margin:-10px 0 0 40px;	
+}
+
+textarea {
+width:373px;	
+}
+
+.section.last {
+padding-bottom:50px;
+}
+
+form {
+padding-top:50px;	
+}
+
+
+
+header {
+width:100%;
+position:fixed;	
+z-index:-100;
+margin-bottom:100px;	
+
+}
+#maincontent {
+width:100%;
+background-color:#FFF;
+position:relative;
+top:740px;
+background-position:center 250px;
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:800px;
+}
+
+#navigationicons, #navigationicons ol, #navigationicons ol li, #navigationicons a {
+z-index:200;
+}
+
+#navigation {
+padding-bottom:165px;	
+}
+
+
+body {
+	overflow:auto;	
+	position:relative;
+}
+
+
+form {
+padding-top:50px;
+margin:0px;
+	
+}
+
+.relativefix {
+height:740px;
+clear:both;	
+}
+
+#projectcontainer {
+width:785px;
+}
+#mainpicture, #mainpicture img {
+width:455px;
+}
+}
+
+
+/*		Desktop Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+@media only screen and (min-width: 992px){
+
+header {
+height:600px;
+padding-top:250px;
+background:#32abdc;	
+}
+
+.container {
+width:800px;
+margin:0 auto 0 auto;
+	
+}
+
+
+footer {
+min-height:300px;
+height:100%;
+background:#32abdc;	
+}
+
+h1 {	
+font-size:60px;
+color:#8bc5dc;
+margin-bottom:20px;
+float:left;
+}
+
+#logo {
+margin:0 0 100px 0;
+}
+
+#logo img {
+width:800px;	
+}
+
+#slogan {
+	font-size:44px;
+	color:#FFF;
+	margin:0 0 100px 0;
+}
+
+#navigation {
+text-align:center;
+font-size:30px;
+font-weight:bold;	
+}
+
+#navigation li {
+float:left;
+width:225px;
+padding:20px 20px;
+
+}
+
+#navigationicons li {
+float:left;
+width:24px;
+height:24px;
+background-repeat:no-repeat;
+border-radius:3px;	
+margin:5px;
+}
+
+.icon.home {
+background-image:url(../img/icon_home.png);	
+}
+.icon.about {
+background-image:url(../img/icon_about.png);	
+}
+.icon.portfolio {
+background-image:url(../img/icon_portfolio.png);	
+}
+.icon.contact {
+background-image:url(../img/icon_email.png);	
+}
+
+.floatedimage {
+float:right;	
+padding:20px;
+background:#e4f5fb;	
+margin:20px 0;
+margin-left:20px;
+}
+
+.backtotop a {
+width:145px;
+float:right;
+font-size:18px;	
+background-image:url(../img/arrow_25.png);
+background-repeat:no-repeat;
+background-position:115px 25px;
+padding-top:15px;
+transition:background-position 1s, color 1s;
+-o-transition:background-position 1s, color 1s;
+-moz-transition:background-position 1s, color 1s;
+-webkit-transition:background-position 1s, color 1s;
+
+}
+
+.backtotop a:hover {
+background-position:115px -50px;
+color:#9cdda7;
+}
+
+.verticle {
+width:250px;
+height:525px;	
+}
+.horizontal {
+width:525px;
+height:250px;	
+}
+
+.square {
+width:250px;
+height:250px;	
+}
+
+.fullhalf {
+width:800px;
+height:250px;	
+}
+
+.concept {
+background-image:url(../img/concept.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.concept:hover {
+background-position:0px -250px;
+}
+
+
+.ecommerce {
+background-image:url(../img/web_250x525_right_ecommerce.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.ecommerce:hover {
+background-position:-250px 0px;
+}
+
+.rideordie {
+background-image:url(../img/logo_250x250_up_rideordie.jpg);	
+background-repeat:no-repeat;
+background-position:-250px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.rideordie:hover {
+background-position:0px 0px;
+}
+
+.grow {
+background-image:url(../img/digital_250x250_down_grow.jpg);
+background-repeat:no-repeat;
+background-position:0px -250px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin:0 25px;	
+}
+
+.grow:hover {
+background-position:0px 0px;
+}
+
+.recipetincan {
+background-image:url(../img/web_525x250_up_recipetincan.jpg);
+background-repeat:no-repeat;
+background-position:0px -250px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-top:25px;
+}
+
+.recipetincan:hover {
+background-position:0px 0px;
+}
+
+.spiral {
+background-image:url(../img/logo_250x250_left_spiral.jpg);
+background-repeat:no-repeat;
+background-position:0px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-right:25px;
+}
+
+.spiral:hover {
+background-position:-250px 0px;
+}
+
+.yorkwater {
+background-image:url(../img/logo_250x250_down_yorkwater.jpg);
+background-repeat:no-repeat;
+background-position:0px -250px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-left:0;
+}
+
+.yorkwater:hover {
+background-position:0px 0px;
+}
+
+.cbt2 {
+background-image:url(../img/web_525x250_left_cbt2.jpg);
+background-repeat:no-repeat;
+background-position:-525px 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+margin-top:25px;
+}
+
+.cbt2:hover {
+background-position:0px 0px;
+}
+
+
+.jquery {
+background-image:url(../img/web_250x525_left_jquery.jpg);
+background-repeat:no-repeat;
+background-position:0 0px;
+transition:background-position 1s;
+-o-transition:background-position 1s;
+-moz-transition:background-position 1s;
+-webkit-transition:background-position 1s;
+}
+
+.jquery:hover {
+background-position:-250px 0px;
+}
+
+
+
+form {
+margin:100px 0 0 0;	
+}
+
+input {
+height:24px;
+margin-bottom:10px;
+margin-left:40px;
+width:260px;
+}
+
+label {
+color:#FFF;	
+}
+
+input, textarea {
+border:1px solid rgba(0, 0, 0, 0.2);
+line-height:normal;	
+font-size:16px;
+}
+
+textarea {
+height:100px;	
+}
+
+.labels, .fields, .message {
+float:left;	
+}
+
+.message {
+margin:-10px 0 0 40px;	
+}
+
+
+textarea {
+width:370px;	
+}
+
+header {
+width:100%;
+position:fixed;	
+z-index:-100;
+margin-bottom:100px;	
+
+}
+#maincontent {
+width:100%;
+background-color:#FFF;
+position:relative;
+top:740px;
+background-position:center 250px;
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:800px;
+}
+
+
+
+#navigation {
+padding-bottom:165px;	
+}
+
+body {
+	overflow:auto;	
+	position:relative;
+}
+
+
+form {
+padding-top:50px;
+margin:0px;
+	
+}
+
+.relativefix {
+height:740px;
+clear:both;	
+}
+}
+
+

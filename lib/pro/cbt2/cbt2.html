@@ -1,0 +1,29 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1><a href="http://www.web-dex.com/ecommerce" target="_blank">Computer Based Training</a></h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/cbt2/thumb_cbt2_home.jpg" alt="CBT2" title="lib/pro/cbt2/cbt2_home.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/cbt2/thumb_cbt2_html.jpg" alt="Tekkit" title="lib/pro/cbt2/cbt2_html.jpg" /><img class="img" src="lib/pro/cbt2/thumb_cbt2_css3.jpg" alt="Tekkit" title="lib/pro/cbt2/cbt2_css3.jpg" /></li>
+    </ol>
+</div>
+<div id="mainpicture" class="leftfloat">
+<a href="http://www.web-dex.com/cbt2" target="_blank"><img class="mainpicture" src="lib/pro/cbt2/cbt2_home.jpg" alt="Computer Based Training main photo"/></a>
+</div>
+<span class="clearfix"></span>
+</div>

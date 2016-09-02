@@ -1,0 +1,29 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1>Time spiral</h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/spiral/thumb_spiral.jpg" alt="CBT2" title="lib/pro/spiral/spiral.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/spiral/thumb_spiral_color.jpg" alt="spiral" title="lib/pro/spiral/spiral_color.jpg" /><img class="img" src="lib/pro/spiral/thumb_spiral_text.jpg" alt="spiral" title="lib/pro/spiral/spiral_text.jpg" /></li>
+    </ol>
+</div>
+<div id="mainpicture" class="leftfloat">
+<img class="mainpicture" src="lib/pro/spiral/spiral.jpg" alt="spiral main photo"/>
+</div>
+<span class="clearfix"></span>
+</div>

@@ -1,0 +1,30 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1><a href="http://www.recipetincan.com" target="_blank">Recipetincan</a></h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/recipetincan/recipetincan_main_thumb.jpg" alt="recipetincan" title="lib/pro/recipetincan/recipetincan_main.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/recipetincan/recipetincan_admin_thumb.jpg" alt="recipetincan" title="lib/pro/recipetincan/recipetincan_admin.jpg" /><img class="img" src="lib/pro/recipetincan/recipetincan_edit_thumb.jpg" alt="recipetincan" title="lib/pro/recipetincan/recipetincan_edit.jpg" /></li>
+        <li class="thumb"><img class="img" src="lib/pro/recipetincan/recipetincan_concept_1_thumb.jpg" alt="recipetincan" title="lib/pro/recipetincan/recipetincan_concept_1.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/recipetincan/recipetincan_concept_2_thumb.jpg" alt="recipetincan" title="lib/pro/recipetincan/recipetincan_concept_2.jpg" /><img class="img" src="lib/pro/recipetincan/recipetincan_db_thumb.jpg" alt="recipetincan" title="lib/pro/recipetincan/recipetincan_db.jpg" /></li>
+    </ol>
+</div>
+<div id="mainpicture" class="leftfloat">
+<a href="http://www.recipetincan.com" target="_blank"><img class="mainpicture" src="lib/pro/recipetincan/recipetincan_main.jpg" alt="tekkit main photo"/></a>
+</div>
+<span class="clearfix"></span>
+</div>

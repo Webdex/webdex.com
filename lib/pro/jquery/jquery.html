@@ -1,0 +1,29 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1><a href="http://www.web-dex.com/jquery" target="_blank">Simply jQuery Tutorials</a></h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/jquery/thumb_jquery_home.jpg" alt="jquery" title="lib/pro/jquery/jquery_home.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/jquery/thumb_jquery_plugin.jpg" alt="jquery" title="lib/pro/jquery/jquery_plugin.jpg" /><img class="img" src="lib/pro/jquery/thumb_jquery_code.jpg" alt="York Water" title="lib/pro/jquery/jquery_code.jpg" /></li>
+    </ol>
+</div>
+<div id="mainpicture" class="leftfloat">
+<a href="http://www.web-dex.com/jquery" target="_blank"><img class="mainpicture" src="lib/pro/jquery/jquery_home.jpg" alt="jquery main photo"/></a>
+</div>
+<span class="clearfix"></span>
+</div>

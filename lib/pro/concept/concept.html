@@ -1,0 +1,29 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1>Concept Work</h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/concept/thumb_aspergers.jpg" alt="aspergers" title="lib/pro/concept/aspergers.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/concept/thumb_kuaiislandbeach.jpg" alt="kuaiislandbeach" title="lib/pro/concept/kuaiislandbeach.jpg" /><img class="img" src="lib/pro/concept/thumb_redwood2.jpg" alt="York Water" title="lib/pro/concept/redwood2.jpg" /></li>
+    </ol>
+</div>
+<div id="mainpicture" class="leftfloat">
+<img class="mainpicture" src="lib/pro/concept/aspergers.jpg" alt="concept main photo"/>
+</div>
+<span class="clearfix"></span>
+</div>

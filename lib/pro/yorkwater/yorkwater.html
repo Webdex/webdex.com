@@ -1,0 +1,29 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1><a href="http://www.web-dex.com/yorkwater.com" target="_blank">York Water: Media Queries</a></h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/yorkwater/thumb_yorkwater_home.jpg" alt="CBT2" title="lib/pro/yorkwater/yorkwater_home.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/yorkwater/thumb_yorkwater_widemobile.jpg" alt="Tekkit" title="lib/pro/yorkwater/yorkwater_widemobile.jpg" /><img class="img" src="lib/pro/yorkwater/thumb_yorkwater_mobile.jpg" alt="York Water" title="lib/pro/yorkwater/yorkwater_mobile.jpg" /></li>
+    </ol>
+</div>
+<div id="mainpicture" class="leftfloat">
+<a href="http://www.web-dex.com/yorkwater.com" target="_blank"><img class="mainpicture" src="lib/pro/yorkwater/yorkwater_home.jpg" alt="York Water main photo"/></a>
+</div>
+<span class="clearfix"></span>
+</div>

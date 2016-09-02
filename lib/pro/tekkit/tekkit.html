@@ -1,0 +1,32 @@
+
+<script>
+$(document).ready(function() {
+ 	$('.img').click(function() {
+	$('#projectcontainer img').css({
+		'border-color': ''
+		});
+		var source = $(this).attr('title');
+		$(this).css({
+		'border-color': '#9CDDA7'
+		});
+		$('.mainpicture').attr('src', source)     
+		// write your code here 
+	});
+});
+</script>
+
+<div id="projectcontainer">
+<h1><a href="http://www.web-dex.com/ecommerce" target="_blank">Tekkit</a></h1>
+<div id="thumbnails" class="rightfloat">
+    <ol>
+        <li class="thumb"><img class="img" src="lib/pro/tekkit/tekkit_main_thumb.jpg" alt="Tekkit" title="lib/pro/tekkit/tekkit_main.jpg" style="border-color:#9CDDA7;"/><img class="img" src="lib/pro/tekkit/tekkit_admin_thumb.jpg" alt="Tekkit" title="lib/pro/tekkit/tekkit_admin.jpg" /><img class="img" src="lib/pro/tekkit/tekkit_cat_thumb.jpg" alt="Tekkit" title="lib/pro/tekkit/tekkit_cat.jpg" /></li>
+    </ol>
+<p>
+<span class="smalltext">(url: <a href="http://www.web-dex.com/ecommerce" target="_blank">www.web-dex.com/ecommerce</a>)</span>
+</p>
+</div>
+<div id="mainpicture" class="leftfloat">
+<a href="http://www.web-dex.com/ecommerce" target="_blank"><img class="mainpicture" src="lib/pro/tekkit/tekkit_main.jpg" alt="tekkit main photo"/></a>
+</div>
+<span class="clearfix"></span>
+</div>
